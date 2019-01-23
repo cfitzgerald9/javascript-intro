@@ -6,11 +6,11 @@ artHead.textContent="Welcome to the Connor blog";
 var x = document.querySelectorAll(".article__header")
 console.log(x)
 for (i = 0; i < x.length; i++) {
-    x[i].classList="article__header_important";
+    x[i].classList="article__header important";
 }
 // Obtain a reference the element with a class of dashed and remove it.
 var deleteMe = document.querySelector(".dashed");
-deleteMe.classList.remove;
+deleteMe.classList.remove("dashed");
 // Obtain a reference the element with a class of article_footer and add the class of goldenrod it.
 var goldenGod =document.querySelector(".article__footer")
 goldenGod.className="goldenrod"  
