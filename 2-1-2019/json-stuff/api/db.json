@@ -1,0 +1,67 @@
+{
+    "foods": [
+        {
+            "barcode": "8076809523509",
+            "id": 1,
+            "name": "Linguine",
+            "category": "pasta",
+            "ethnicity": "italian"
+        },
+        {
+            "barcode": "8854404000829",
+            "id": 2,
+            "name": "Massaman curry",
+            "category": "curry",
+            "ethnicity": "thai"
+        },
+        {
+            "barcode": "0044738102353",
+            "id": 3,
+            "name": "Green curry",
+            "category": "curry",
+            "ethnicity": "thai"
+        },
+        {
+            "barcode": "0719283590596",
+            "id": 4,
+            "name": "Ravioli Funghi",
+            "category": "pasta",
+            "ethnicity": "italian"
+        },
+        {
+            "barcode": "5000169116562",
+            "id": 5,
+            "name": "Tuscan Soup",
+            "category": "vegetarian",
+            "ethnicity": "italian"
+        },
+        {
+            "barcode": "8410076472120",
+            "name": "taco",
+            "category": "the best",
+            "ethnicity": "mexican",
+            "id": 6
+        },
+        {
+            "barcode": "0688267151040",
+            "name": "pho",
+            "category": "soup",
+            "ethnicity": "vietnamese",
+            "id": 7
+        },
+        {
+            "barcode": "00119948",
+            "name": "chilli",
+            "category": "soup",
+            "ethnicity": "american",
+            "id": 8
+        },
+        {
+            "barcode": "0051000058973",
+            "name": "chicken noodle soup",
+            "category": "soup",
+            "ethnicity": "american",
+            "id": 9
+        }
+    ]
+}

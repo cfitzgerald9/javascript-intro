@@ -1,0 +1,14 @@
+#foodList{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+section{
+    border: 1px solid red;
+    text-align: center;
+}
+#nameID{
+    text-emphasis: bold;
+    font-size: 150%;
+    padding-bottom: 2rem
+}
