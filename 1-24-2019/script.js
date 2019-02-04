@@ -32,19 +32,19 @@ const aside = (title, style) => {
     return `<aside class="${style}">${title}</aside>`
 }
 
-// const container = document.querySelector("#container")
+const container = document.querySelector("#container")
 // container.innerHTML = student("Marcus Fulbright", "Algebra", "Not a bright student")
 
-const createStudentComponentPass = (name, studentClass, sectionContent, asideInfo) => `
+const createStudentComponentPass = (name,  sectionContent, asideInfo) => `
     <div id="student">
-        ${h1(name, studentClass, "xx-large passing")}
+        ${h1(name, "xx-large passing")}
         ${section(sectionContent, "section--padded")}
-        ${aside(asideInfo, "pushRight")}
+        ${aside (asideInfo, "pushRight")}
     </div>
 `
-const createStudentComponentFail = (name, studentClass, sectionContent, asideInfo) => `
+const createStudentComponentFail = (name, sectionContent, asideInfo) => `
     <div id="student">
-        ${h1(name, studentClass, "xx-large failing")}
+        ${h1(name, "xx-large failing")}
         ${section(sectionContent, "section--padded")}
         ${aside(asideInfo, "pushRight")}
     </div>
@@ -55,8 +55,7 @@ const createStudentComponentFail = (name, studentClass, sectionContent, asideInf
     <section class="bordered dashed section--padded">Student class</section>
     <aside class="pushRight">Additional information</aside>
 </div> */}
-
-const container = document.querySelector("#container")
+ 
 const students = [
     {
         name: "Chris Miller",
@@ -131,12 +130,13 @@ const students = [
         score: 95
     }
 ]
-
-for(let i = 0; i < students.length; i++){
+for (const student of students) {
     let studentComponent = ""
-    if (students[i].score >= 60){
-        studentComponent = container.innerHTML(createStudentComponentPass(students[i].name, students[i].class, students[i].info, students[i].class))
-    }
-    else { studentComponent = container.innerHTML(createStudentComponentFail(students[i].name, students[i].class, students[i].info, students[i].class))
+    if (student.score > 60) {
+        studentComponent = createStudentComponentPass(student.name, student.class, student.info, student.score)
+        container.innerHTML += studentComponent
+    } else {
+        studentComponent = createStudentComponentFail(student.name, student.class, student.info, student.score)
+        container.innerHTML += studentComponent
     }
 }
