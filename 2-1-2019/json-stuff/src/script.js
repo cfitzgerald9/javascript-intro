@@ -19,8 +19,10 @@ fetch("http://localhost:8088/foods")
                 .then(productInfo => {
                     foods.ingredients = productInfo.product.ingredients_text_en
                     console.log(foods.ingredients)
+                    buildString += `<section> <div id="nameID">${foods.name}</div><div id= "catFood"> ${foods.category}</div> <div id ="ethFood">${foods.ethnicity}</div><div id ="idFood">${foods.ingredients}</div></section>`
                         document.querySelector("#foodList").innerHTML=buildString
-                        buildString += `<section> <div id="nameID">${foods.name}</div><div> ${foods.category}</div> <div>${foods.ethnicity}</div><div>${foods.ingredients}</div></section>`})
+                    })
+                        
                     
                 })
         })

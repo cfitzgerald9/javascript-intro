@@ -1,14 +1,32 @@
 #foodList{
     display:flex;
     flex-direction: row;
-    justify-content: space-between
+    align-content: space-between;
+    margin: 3vw;
+    
 }
 section{
     border: 1px solid red;
     text-align: center;
+    width: 20vw;
+    padding: 1rem;
 }
 #nameID{
     text-emphasis: bold;
     font-size: 150%;
-    padding-bottom: 2rem
+    padding-bottom: 1.5rem
+}
+
+#catFood{
+    padding: .5rem;
+    font-size: 120%
+}
+#ethFood{
+    padding:1rem;
+    font-size:100%;
+}
+
+#idFood{
+    font-size: 75%;
+    padding: 1rem;
 }
